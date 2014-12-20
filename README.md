@@ -9,12 +9,12 @@ Many investors simply sell positions that lost money in order to offset capital 
 
 Corporate actions such as dividends and stock splits are taken into account.
 
-Requirements
+# Requirements
   * Python 2.7+
   * numpy
   * ystockquote
 
-Example usage
+# Example usage
 
 ```
 $ python market_correlator.py symbols.txt SPY 2014-01-01 2014-12-18 10
