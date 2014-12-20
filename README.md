@@ -3,6 +3,12 @@ market_correlator
 
 Find highly correlated stocks.
 
+This tool is designed to help investors with [tax loss harvesting](http://www.investopedia.com/terms/t/taxgainlossharvesting.asp). 
+
+Many investors simply sell positions that lost money in order to offset capital gains tax, but this can reduce diversification. A better approach is to find strongly correlated securities to replace those that were sold.
+
+Corporate actions such as dividends and stock splits are taken into account.
+
 Requirements
   * Python 2.7+
   * numpy
@@ -24,6 +30,21 @@ ITOT	0.999163
 IWB	0.999161
 VONE	0.999129
 IWL	0.998720
+```
+```
+$ python market_correlator.py symbols.txt DOW 2014-01-01 2014-12-18 10 --skip_dataload
+
+Ticker	R-value
+IYM	0.942110
+UYM	0.936716
+PYZ	0.934378
+MATL	0.928056
+VAW	0.926041
+FMAT	0.924869
+HHC	0.921352
+PBP	0.911964
+XLB	0.911857
+MLM	0.903803
 ```
 ```
 $ python market_correlator.py symbols.txt GLD 2014-01-01 2014-12-18 10 --skip_dataload
